@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday 🎂</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  overflow: hidden;
+}
+
+.card {
+  width: 90%;
+  max-width: 400px;
+  padding: 30px 20px;
+  text-align: center;
+  background: rgba(255,255,255,0.95);
+  border-radius: 25px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.gift {
+  font-size: 70px;
+}
+
+h1 {
+  color: #ff4f81;
+  font-size: 34px;
+}
+
+p {
+  color: #555;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+button {
+  border: none;
+  padding: 15px 25px;
+  border-radius: 30px;
+  background: #ff4f81;
+  color: white;
+  font-size: 17px;
+}
+
+#message {
+  display: none;
+  margin-top: 20px;
+}
+
+.heart {
+  position: fixed;
+  bottom: -30px;
+  font-size: 25px;
+  animation: naik 5s linear forwards;
+}
+
+@keyframes naik {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  to {
+    transform: translateY(-110vh);
+    opacity: 0;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+  <div class="gift">🎁</div>
+
+  <h1>Happy Birthday! 🎂</h1>
+
+  <p>
+    Selamat ulang tahun! 💖
+    <br>
+    Semoga hari ini menjadi hari yang indah,
+    penuh kebahagiaan dan senyuman.
+  </p>
+
+  <button onclick="bukaHadiah()">
+    💝 Buka Hadiah
+  </button>
+
+  <div id="message">
+
+    <h2>🎉 Surprise! 🎉</h2>
+
+    <p>
+      Semoga semua impianmu tercapai,
+      selalu bahagia, dan tetap menjadi
+      seseorang yang luar biasa! ✨
+    </p>
+
+    <div style="font-size:45px;">
+      💖 🌸 🎂 🎈
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+
+function bukaHadiah() {
+
+  document.getElementById("message").style.display = "block";
